@@ -1495,6 +1495,14 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  .con__wrap {
+    max-width: calc(100% - 10px);
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
 .contact__form {
   position: relative;
   width: 100%;
@@ -1512,7 +1520,7 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .contact__form {
-    width: 450px;
+    width: 440px;
     margin-top: 40px;
     padding: 30px 15px;
   }
@@ -1575,7 +1583,7 @@ a:hover {
 }
 
 .contact-form__label {
-  width: 33.7837837838%;
+  width: 226px;
   padding-top: 7px;
 }
 .contact-form__label label {
@@ -1590,7 +1598,7 @@ a:hover {
   content: "*";
   position: absolute;
   top: 0;
-  right: -10px;
+  right: -20px;
   width: 19px;
   height: 9px;
   color: red;
@@ -1600,7 +1608,7 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .contact-form__label {
-    width: 190px;
+    width: 37.5%;
     padding-top: 3px;
   }
   .contact-form__label label {
@@ -1611,7 +1619,7 @@ a:hover {
     position: relative;
   }
   .contact-form__label label.is-required::after {
-    right: -15px;
+    right: -13px;
     width: 8px;
     font-size: 14px;
   }
@@ -1635,6 +1643,9 @@ a:hover {
   }
 }
 
+.contact-form__input {
+  max-width: calc(100% - 226px);
+}
 .contact-form__input [type=text],
 .contact-form__input [type=email],
 .contact-form__input [type=tel] {
@@ -1647,6 +1658,10 @@ a:hover {
   color: #808080;
   font-size: 16px;
 }
+.contact-form__input [type=text],
+.contact-form__input [type=age] {
+  margin-left: 20px;
+}
 .contact-form__input [type=age] {
   width: 50px;
   padding: 9px 15px;
@@ -1658,6 +1673,9 @@ a:hover {
   font-size: 16px;
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
+  .contact-form__input {
+    max-width: 62.5%;
+  }
   .contact-form__input [type=text],
   .contact-form__input [type=email],
   .contact-form__input [type=tel] {
@@ -1676,6 +1694,9 @@ a:hover {
   }
 }
 @media screen and (max-width: 480px) {
+  .contact-form__input {
+    max-width: 100%;
+  }
   .contact-form__input [type=text],
   .contact-form__input [type=email],
   .contact-form__input [type=tel] {
@@ -1689,10 +1710,30 @@ a:hover {
     color: #808080;
     font-size: 14px;
   }
+  .contact-form__input [type=text],
+  .contact-form__input [type=age] {
+    margin-left: 0;
+  }
   .contact-form__input [type=age] {
     margin-top: 10px;
     padding: 6px 10px;
     font-size: 14px;
+  }
+}
+
+.contact-form__input-textarea {
+  max-width: 450px;
+  width: 100%;
+  margin-left: 20px;
+}
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  .contact-form__input-textarea {
+    max-width: calc(62.5% - 20px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact-form__input-textarea {
+    margin-left: 0;
   }
 }
 
@@ -1707,6 +1748,9 @@ a:hover {
   }
 }
 
+.contact-form-email {
+  margin-left: 20px;
+}
 .contact-form-email .contact-form__input:not(:first-child) {
   margin-top: 10px;
 }
@@ -1718,9 +1762,24 @@ a:hover {
 @media screen and (max-width: 480px) {
   .contact-form-email {
     width: 100%;
+    margin-left: 0;
   }
   .contact-form-email .contact-form__input:not(:first-child) {
     margin-top: 0;
+  }
+}
+
+.contact-form-tel {
+  margin-left: 20px;
+}
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  .contact-form-tel {
+    width: 230px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact-form-tel {
+    margin-left: 0;
   }
 }
 
@@ -1732,7 +1791,6 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .contact-form-notice {
-    width: 250px;
     font-size: 12px;
   }
 }
@@ -1769,13 +1827,13 @@ select {
   select {
     display: inline-block;
     width: 110px;
+    margin-left: 0;
     height: auto;
     padding: 5px;
   }
 }
 
 textarea {
-  max-width: 460px;
   width: 100%;
   height: 150px;
   resize: none;
@@ -1787,11 +1845,6 @@ textarea {
   color: #CCC;
   font-size: 14px;
 }
-@media screen and (min-width: 481px) and (max-width: 1023px) {
-  textarea {
-    width: 250px;
-  }
-}
 @media screen and (max-width: 480px) {
   textarea {
     width: 100%;
@@ -1799,6 +1852,9 @@ textarea {
   }
 }
 
+.contact-form__radio {
+  margin-left: 20px;
+}
 .contact-form__radio [type=radio] {
   display: none;
 }
@@ -1856,6 +1912,9 @@ textarea {
   }
 }
 @media screen and (max-width: 480px) {
+  .contact-form__radio {
+    margin-left: 0;
+  }
   .contact-form__radio span {
     margin-top: 8px;
     margin-right: 0;
@@ -1969,9 +2028,19 @@ textarea {
   }
 }
 
+.contact-form__date-contents {
+  width: 450px;
+  margin-left: 20px;
+}
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  .contact-form__date-contents {
+    max-width: calc(62.5% - 20px);
+  }
+}
 @media screen and (max-width: 480px) {
   .contact-form__date-contents {
     margin-top: 10px;
+    margin-left: 0;
   }
 }
 
@@ -2015,6 +2084,7 @@ textarea {
 }
 
 .contact-form__date-title {
+  display: inline-block;
   font-weight: 700;
   line-height: 37px;
 }
@@ -2042,6 +2112,9 @@ textarea {
 @media screen and (max-width: 480px) {
   .contact-form-date__item {
     margin-top: 5px;
+  }
+  .contact-form-date__item .contact-form__input {
+    margin-left: 20px;
   }
 }
 

@@ -1466,6 +1466,12 @@ section {
 }
 .con__wrap {
 
+    @include breakpoints.mq(tb) {
+        max-width: calc(100% - 5px * 2);
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
 }
 .contact__form {
     position: relative;
@@ -1482,7 +1488,7 @@ section {
     }
 
     @include breakpoints.mq(tb) {
-        width: calc(480px - 30px);
+        width: calc(480px - 30px - 10px);
         margin-top: 40px;
         padding: 30px 15px;
     }
@@ -1537,7 +1543,7 @@ section {
     }
 }
 .contact-form__label {
-    width: calc(250 / 740 * 100%);
+    width: 226px;
     padding-top: 7px;
 
     label {
@@ -1552,7 +1558,7 @@ section {
                 content: "*";
                 position: absolute;
                 top: 0;
-                right: -10px;
+                right: -20px;
                 width: 19px;
                 height: 9px;
                 color: red;
@@ -1564,7 +1570,7 @@ section {
     }
 
     @include breakpoints.mq(tb) {
-        width: 190px;
+        width: calc(180px / 480px * 100%);
         padding-top: 3px;
 
         label {
@@ -1575,7 +1581,7 @@ section {
                 position: relative;
 
                 &::after {
-                    right: -15px;
+                    right: -13px;
                     width: 8px;
                     font-size: 14px;
                 }
@@ -1604,6 +1610,7 @@ section {
     }
 }
 .contact-form__input {
+    max-width: calc(100% - 226px);
 
     [type="text"],
     [type="email"],
@@ -1614,6 +1621,11 @@ section {
         appearance: 0;
         color: #808080;
         font-size: 16px;
+    }
+
+    [type="text"],
+    [type="age"] {
+        margin-left: 20px;
     }
 
     [type="text"] {
@@ -1638,6 +1650,7 @@ section {
     }
 
     @include breakpoints.mq(tb) {
+        max-width: calc(300 / 480 * 100%);
 
         [type="text"],
         [type="email"],
@@ -1657,6 +1670,7 @@ section {
     }
 
     @include breakpoints.mq(sp) {
+        max-width: 100%;
 
         [type="text"],
         [type="email"],
@@ -1670,11 +1684,29 @@ section {
             font-size: 14px;
         }
 
+        [type="text"],
+        [type="age"] {
+            margin-left: 0;
+        }
+
         [type="age"] {
             margin-top: 10px;
             padding: 6px 10px;
             font-size: 14px;
         }
+    }
+}
+.contact-form__input-textarea {
+    max-width: 450px;
+    width: 100%;
+    margin-left: 20px;
+
+    @include breakpoints.mq(tb) {
+        max-width: calc(300 / 480 * 100% - 20px);
+    }
+
+    @include breakpoints.mq(sp) {
+        margin-left: 0;
     }
 }
 .contact-age {
@@ -1693,6 +1725,7 @@ section {
     }
 }
 .contact-form-email {
+    margin-left: 20px;
 
     .contact-form__input {
         &:not(:first-child) {
@@ -1706,6 +1739,7 @@ section {
 
     @include breakpoints.mq(sp) {
         width: 100%;
+        margin-left: 0;
 
         .contact-form__input {
 
@@ -1716,7 +1750,15 @@ section {
     }
 }
 .contact-form-tel {
+    margin-left: 20px;
 
+    @include breakpoints.mq(tb) {
+        width: calc(250px - 10px * 2);
+    }
+
+    @include breakpoints.mq(sp) {
+        margin-left: 0;
+    }
 }
 .contact-form-notice {
     display: block;
@@ -1725,7 +1767,6 @@ section {
     font-size: 14px;
 
     @include breakpoints.mq(tb) {
-        width: 250px;
         font-size: 12px;
     }
 
@@ -1756,13 +1797,12 @@ select {
     @include breakpoints.mq(sp) {
         display: inline-block;
         width: 110px;
+        margin-left: 0;
         height: auto;
         padding: 5px;
     }
 }
-
 textarea {
-    max-width: 460px;
     width: 100%;
     height: 150px;
     resize: none;
@@ -1773,7 +1813,7 @@ textarea {
     font-size: 14px;
 
     @include breakpoints.mq(tb) {
-        width: 250px;
+
     }
 
     @include breakpoints.mq(sp) {
@@ -1782,7 +1822,7 @@ textarea {
     }
 }
 .contact-form__radio {
-
+    margin-left: 20px;
 
     [type="radio"] {
         display: none;
@@ -1852,6 +1892,7 @@ textarea {
     }
 
     @include breakpoints.mq(sp) {
+        margin-left: 0;
 
         span {
             margin-top: 8px;
@@ -1979,11 +2020,17 @@ textarea {
     }
 }
 .contact-form__date-contents {
+    width: 450px;
+    margin-left: 20px;
+
+    @include breakpoints.mq(tb) {
+        max-width: calc(300 / 480 * 100% - 20px);
+    }
 
     @include breakpoints.mq(sp) {
         margin-top: 10px;
+        margin-left: 0;
     }
-
 }
 .contact-form__date {
     display: flex;
@@ -2030,6 +2077,7 @@ textarea {
     }
 }
 .contact-form__date-title {
+    display: inline-block;
     font-weight: $font-weight-bold;
     line-height: 37px;
 
@@ -2052,6 +2100,10 @@ textarea {
 
     @include breakpoints.mq(sp) {
         margin-top: 5px;
+
+        .contact-form__input {
+            margin-left: 20px;
+        }
     }
 }
 .contact-form__sp-btn {
@@ -2084,7 +2136,6 @@ textarea {
             text-align: center;
             cursor: pointer;
         }
-
     }
 }
 .contact-form__btn {
