@@ -1495,7 +1495,7 @@ section {
     @include breakpoints.mq(tb) {
         width: clamp(26.25rem, 17.614rem + 43.18vw, 50rem);
         margin-top: 40px;
-        padding: 30px 15px;
+        padding: calc(30 / 740 * 100%) calc(15 / 481 * 100%);
     }
 
     @include breakpoints.mq(sp) {
@@ -1536,7 +1536,8 @@ section {
     }
 
     @include breakpoints.mq(tb) {
-        width: clamp(26.875rem, 19.83rem + 35.23vw, 46.25rem);
+        max-width: 740px;
+        min-width: 438px;
     }
 
     @include breakpoints.mq(sp) {
@@ -1575,7 +1576,8 @@ section {
     }
 
     @include breakpoints.mq(tb) {
-        width: clamp(9.938rem, 8.551rem + 6.93vw, 13.75rem);
+        max-width: calc(250 / 740 * 100%);
+        width: 100%;
         padding-top: 3px;
 
         label {
@@ -1615,7 +1617,6 @@ section {
     }
 }
 .contact-form__input {
-    max-width: calc(100% - 226px);
 
     [type="text"],
     [type="email"],
@@ -1654,8 +1655,12 @@ section {
 
     }
 
+    @include breakpoints.mq(pc) {
+        max-width: calc(100% - 226px);
+    }
+
     @include breakpoints.mq(tb) {
-        max-width: calc(300 / 480 * 100%);
+        width: clamp(11.25rem, 9.659rem + 7.95vw, 15.625rem);
 
         [type="text"],
         [type="email"],

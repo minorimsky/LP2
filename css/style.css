@@ -1527,7 +1527,7 @@ a:hover {
   .contact__form {
     width: clamp(26.25rem, 17.614rem + 43.18vw, 50rem);
     margin-top: 40px;
-    padding: 30px 15px;
+    padding: 4.0540540541% 3.1185031185%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1575,7 +1575,8 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .contact-form__row {
-    width: clamp(26.875rem, 19.83rem + 35.23vw, 46.25rem);
+    max-width: 740px;
+    min-width: 438px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1613,7 +1614,8 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .contact-form__label {
-    width: clamp(9.938rem, 8.551rem + 6.93vw, 13.75rem);
+    max-width: 33.7837837838%;
+    width: 100%;
     padding-top: 3px;
   }
   .contact-form__label label {
@@ -1648,9 +1650,6 @@ a:hover {
   }
 }
 
-.contact-form__input {
-  max-width: calc(100% - 226px);
-}
 .contact-form__input [type=text],
 .contact-form__input [type=email],
 .contact-form__input [type=tel] {
@@ -1677,9 +1676,14 @@ a:hover {
   color: #808080;
   font-size: 16px;
 }
+@media screen and (min-width: 1024px) {
+  .contact-form__input {
+    max-width: calc(100% - 226px);
+  }
+}
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .contact-form__input {
-    max-width: 62.5%;
+    width: clamp(11.25rem, 9.659rem + 7.95vw, 15.625rem);
   }
   .contact-form__input [type=text],
   .contact-form__input [type=email],
