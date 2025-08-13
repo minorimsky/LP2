@@ -1493,7 +1493,7 @@ section {
     }
 
     @include breakpoints.mq(tb) {
-        width: clamp(26.25rem, 17.614rem + 43.18vw, 50rem);
+        width: clamp(27.375rem, 10.624rem + 55.72vw, 46.25rem);
         margin-top: 40px;
         padding: calc(30 / 740 * 100%) calc(15 / 481 * 100%);
     }
@@ -1513,7 +1513,7 @@ section {
     background-color: color.$sub-color;
 
     @include breakpoints.mq(tb) {
-        width: clamp(18.75rem, 13.068rem + 28.41vw, 34.375rem);
+        width: clamp(18.75rem, 4.884rem + 46.13vw, 34.375rem);
     }
 
     @include breakpoints.mq(sp) {
@@ -1536,8 +1536,7 @@ section {
     }
 
     @include breakpoints.mq(tb) {
-        max-width: 740px;
-        min-width: 438px;
+        width: clamp(27.375rem, 10.624rem + 55.72vw, 46.25rem);
     }
 
     @include breakpoints.mq(sp) {
@@ -1576,8 +1575,7 @@ section {
     }
 
     @include breakpoints.mq(tb) {
-        max-width: calc(250 / 740 * 100%);
-        width: 100%;
+        width: clamp(10.563rem, 7.734rem + 9.41vw, 13.75rem);
         padding-top: 3px;
 
         label {
@@ -1660,7 +1658,7 @@ section {
     }
 
     @include breakpoints.mq(tb) {
-        width: clamp(11.25rem, 9.659rem + 7.95vw, 15.625rem);
+        width: clamp(18.063rem, 5.25rem + 42.62vw, 32.5rem);
 
         [type="text"],
         [type="email"],
@@ -1715,7 +1713,7 @@ section {
     }
 
     @include breakpoints.mq(tb) {
-        width: clamp(15.625rem, 10.852rem + 23.86vw, 28.75rem);
+        width: clamp(15.625rem, 3.977rem + 38.75vw, 28.75rem);
     }
 
     @include breakpoints.mq(sp) {

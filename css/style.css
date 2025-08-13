@@ -1525,7 +1525,7 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .contact__form {
-    width: clamp(26.25rem, 17.614rem + 43.18vw, 50rem);
+    width: clamp(27.375rem, 10.624rem + 55.72vw, 46.25rem);
     margin-top: 40px;
     padding: 4.0540540541% 3.1185031185%;
   }
@@ -1548,7 +1548,7 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .form__bg {
-    width: clamp(18.75rem, 13.068rem + 28.41vw, 34.375rem);
+    width: clamp(18.75rem, 4.884rem + 46.13vw, 34.375rem);
   }
 }
 @media screen and (max-width: 480px) {
@@ -1575,8 +1575,7 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .contact-form__row {
-    max-width: 740px;
-    min-width: 438px;
+    width: clamp(27.375rem, 10.624rem + 55.72vw, 46.25rem);
   }
 }
 @media screen and (max-width: 480px) {
@@ -1614,8 +1613,7 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .contact-form__label {
-    max-width: 33.7837837838%;
-    width: 100%;
+    width: clamp(10.563rem, 7.734rem + 9.41vw, 13.75rem);
     padding-top: 3px;
   }
   .contact-form__label label {
@@ -1683,7 +1681,7 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .contact-form__input {
-    width: clamp(11.25rem, 9.659rem + 7.95vw, 15.625rem);
+    width: clamp(18.063rem, 5.25rem + 42.62vw, 32.5rem);
   }
   .contact-form__input [type=text],
   .contact-form__input [type=email],
@@ -1741,7 +1739,7 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .contact-form__input-textarea {
-    width: clamp(15.625rem, 10.852rem + 23.86vw, 28.75rem);
+    width: clamp(15.625rem, 3.977rem + 38.75vw, 28.75rem);
   }
 }
 @media screen and (max-width: 480px) {
