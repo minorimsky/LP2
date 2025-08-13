@@ -166,7 +166,7 @@ section {
     @include breakpoints.mq(sp) {
 
         a {
-            padding: 6px 44px 6px 25px;
+            padding: 12px 44px 12px 25px;
             font-size: 16px;
 
             &::after {
@@ -320,8 +320,9 @@ section {
         text-align: center;
 
         a {
-            color: #333;
             display: block;
+            width: 210px;
+            color: #333;
             font-size: clamp(0.9rem, 0.773rem + 0.64vw, 1.25rem);
             font-weight: 400;
         }
@@ -612,8 +613,8 @@ section {
         font-size: 20px;
 
         &::after {
-            bottom: -18px;
-            height: 13px;
+            bottom: -23px;
+            height: 20px;
         }
     }
 }
@@ -1012,7 +1013,7 @@ section {
     @include breakpoints.mq(sp) {
 
         &:not(:first-child) {
-            margin-top: 20px;
+            margin-top: 30px;
         }
     }
 }
@@ -1070,6 +1071,7 @@ section {
 
     @include breakpoints.mq(sp) {
         margin-top: 10px;
+        font-size: 14px;
     }
 }
 
@@ -1680,7 +1682,7 @@ section {
         [type="tel"] {
             width: 100%;
             margin-top: 10px;
-            padding: 6px 10px;
+            padding: 10px 10px;
             border: none;
             appearance: 0;
             color: #808080;
@@ -1694,7 +1696,7 @@ section {
 
         [type="age"] {
             margin-top: 10px;
-            padding: 6px 10px;
+            padding: 10px 10px;
             font-size: 14px;
         }
     }
@@ -1802,7 +1804,7 @@ select {
         width: 110px;
         margin-left: 0;
         height: auto;
-        padding: 5px;
+        padding: 10px 5px;
     }
 }
 textarea {
@@ -2074,7 +2076,7 @@ textarea {
         [type="date"] {
             width: 110px;
             margin-left: 0;
-            padding: 5px;
+            padding:  10px 5px;
             font-size: 14px;
         }
     }
