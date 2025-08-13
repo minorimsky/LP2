@@ -125,7 +125,7 @@ a:hover {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: #fff;
   font-size: 24px;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
   cursor: pointer;
 }
@@ -776,7 +776,7 @@ a:hover {
 
 /*what*/
 .what {
-  padding-top: 20px;
+  padding-top: 80px;
   padding-bottom: 80px;
   background-color: #fff;
   font-family: "Noto Sans JP", sans-serif;
@@ -991,7 +991,10 @@ a:hover {
 .reason__items {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  width: 800px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .reason__items {
@@ -1024,16 +1027,16 @@ a:hover {
 }
 
 .reason__image {
-  width: 297px;
-  height: 297px;
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   background-color: #fff;
 }
 .reason__image img {
   display: block;
-  width: 250px;
-  height: 250px;
-  padding: 24px 23px 23px 24px;
+  width: 200px;
+  height: 200px;
+  padding: 15px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1150,7 +1153,7 @@ a:hover {
 .price__contents {
   display: flex;
   justify-content: space-between;
-  max-width: 660px;
+  max-width: 550px;
   width: 100%;
   padding: 20px 40px;
   margin-top: 50px;
@@ -1183,7 +1186,7 @@ a:hover {
 .price__left span {
   display: block;
   margin-top: 10px;
-  font-size: 85px;
+  font-size: 80px;
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .price__left {
@@ -1205,7 +1208,7 @@ a:hover {
 }
 
 .price__right {
-  width: 430px;
+  width: 350px;
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .price__right {
@@ -1250,7 +1253,7 @@ a:hover {
 
 .price-main {
   color: #FEBBCC;
-  font-size: 96px;
+  font-size: 80px;
   font-weight: 700;
   text-align: center;
 }
@@ -1267,11 +1270,11 @@ a:hover {
 
 .devide {
   margin-top: 10px;
-  font-size: 24px;
+  font-size: 20px;
   text-align: right;
 }
 .devide span {
-  font-size: 40px;
+  font-size: 32px;
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .devide {
@@ -1354,7 +1357,7 @@ a:hover {
 }
 @media screen and (min-width: 1024px) {
   .faq__items {
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
   }
 }
@@ -2162,7 +2165,7 @@ textarea {
 .contact-form__btn [type=submit] {
   display: inline-block;
   margin: 0 auto;
-  padding: 20px 30px;
+  padding: 15px 30px;
   border: 3px solid #FEBBCC;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
   background-color: #FEBBCC;
