@@ -1670,7 +1670,6 @@ section {
     }
 
     @include breakpoints.mq(tb) {
-        width: clamp(18.063rem, 5.25rem + 42.62vw, 32.5rem);
 
         [type="text"],
         [type="email"],
@@ -2149,7 +2148,7 @@ textarea {
 
     @include breakpoints.mq(sp) {
         display: block;
-        margin-top: 40px;
+        margin-top: 15px;
         text-align: center;
         transition: all 0.3s ease 0s;
 

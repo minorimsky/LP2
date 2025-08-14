@@ -1691,9 +1691,6 @@ a:hover {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
-  .contact-form__input {
-    width: clamp(18.063rem, 5.25rem + 42.62vw, 32.5rem);
-  }
   .contact-form__input [type=text],
   .contact-form__input [type=email],
   .contact-form__input [type=tel] {
@@ -2159,7 +2156,7 @@ textarea {
 @media screen and (max-width: 480px) {
   .contact-form__sp-btn {
     display: block;
-    margin-top: 40px;
+    margin-top: 15px;
     text-align: center;
     transition: all 0.3s ease 0s;
   }
