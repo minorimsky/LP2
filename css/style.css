@@ -323,8 +323,7 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .top-wrap {
-    max-width: 674px;
-    width: 100%;
+    width: clamp(26.25rem, 12.162rem + 46.86vw, 42.125rem);
     padding-top: 45px;
     padding-bottom: 30px;
   }
@@ -556,11 +555,12 @@ a:hover {
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .rec {
     padding-top: 60px;
-    padding-bottom: 125px;
+    padding-bottom: 60px;
   }
   .rec::before, .rec::after {
-    width: 254px;
-    height: 114px;
+    width: clamp(10.063rem, 5.015rem + 16.79vw, 15.75rem);
+    height: clamp(4.125rem, 2.017rem + 7.01vw, 6.5rem);
+    aspect-ratio: 63/26;
   }
 }
 @media screen and (max-width: 480px) {
@@ -623,7 +623,10 @@ a:hover {
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .rec__contents {
     display: block;
+    width: clamp(20.25rem, 11.542rem + 28.97vw, 30.063rem);
     margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 40px 45px;
   }
 }
@@ -722,8 +725,8 @@ a:hover {
     margin-top: 10px;
   }
   .rec__list::before {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
   }
 }
 
@@ -735,7 +738,10 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .rec-message__text {
+    width: clamp(18.75rem, 9.321rem + 31.37vw, 29.375rem);
     margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 15px 0;
   }
 }
@@ -968,6 +974,12 @@ a:hover {
   font-size: 18px;
   line-height: 24px;
 }
+@media screen and (max-width: 480px) {
+  .what-item__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 
 /*reason*/
 .reason {
@@ -999,8 +1011,7 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .reason__items {
-    max-width: 480px;
-    width: 100%;
+    width: clamp(26.25rem, 5.173rem + 70.11vw, 50rem);
     margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
@@ -1044,13 +1055,13 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .reason__image {
-    width: 150px;
-    height: 150px;
+    width: clamp(7.5rem, 1.399rem + 20.3vw, 14.375rem);
+    height: clamp(7.5rem, 1.399rem + 20.3vw, 14.375rem);
   }
   .reason__image img {
-    width: 130px;
-    height: 130px;
-    padding: 10px;
+    width: clamp(6.25rem, 0.703rem + 18.45vw, 12.5rem);
+    height: clamp(6.25rem, 0.703rem + 18.45vw, 12.5rem);
+    padding: clamp(0.625rem, 0.348rem + 0.92vw, 0.938rem);
   }
 }
 @media screen and (max-width: 480px) {
@@ -1077,7 +1088,7 @@ a:hover {
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .reason__text {
     margin-top: 15px;
-    font-size: 16px;
+    font-size: clamp(1rem, 0.556rem + 1.48vw, 1.5rem);
     line-height: 24px;
   }
 }
@@ -1135,11 +1146,12 @@ a:hover {
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .price {
     padding-top: 60px;
-    padding-bottom: 125px;
+    padding-bottom: 60px;
   }
   .price::before, .price::after {
-    width: 254px;
-    height: 114px;
+    width: clamp(10.063rem, 5.015rem + 16.79vw, 15.75rem);
+    height: clamp(4.125rem, 2.017rem + 7.01vw, 6.5rem);
+    aspect-ratio: 63/26;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1166,9 +1178,9 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .price__contents {
-    max-width: 354px;
+    width: clamp(22.125rem, 5.596rem + 54.98vw, 40.75rem);
     margin-top: 30px;
-    padding: 10px 30px;
+    padding: clamp(0.625rem, 0.07rem + 1.85vw, 1.25rem) clamp(1.875rem, 1.32rem + 1.85vw, 2.5rem);
   }
 }
 @media screen and (max-width: 480px) {
@@ -1193,10 +1205,10 @@ a:hover {
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .price__left {
     margin-top: 16px;
-    font-size: 24px;
+    font-size: clamp(1.5rem, 0.779rem + 2.4vw, 2.313rem);
   }
   .price__left span {
-    font-size: 56px;
+    font-size: clamp(3.5rem, 2.169rem + 4.43vw, 5rem);
   }
 }
 @media screen and (max-width: 480px) {
@@ -1214,7 +1226,7 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .price__right {
-    width: 232px;
+    width: clamp(14.5rem, 7.955rem + 21.77vw, 21.875rem);
   }
 }
 @media screen and (max-width: 480px) {
@@ -1229,7 +1241,7 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .price__times {
-    font-size: 20px;
+    font-size: clamp(1.25rem, 1.028rem + 0.74vw, 1.5rem);
   }
 }
 @media screen and (max-width: 480px) {
@@ -1244,7 +1256,7 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .price-number {
-    font-size: 32px;
+    font-size: clamp(2rem, 1.113rem + 2.95vw, 3rem);
   }
 }
 @media screen and (max-width: 480px) {
@@ -1261,7 +1273,7 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .price-main {
-    font-size: 52px;
+    font-size: clamp(3.25rem, 1.697rem + 5.17vw, 5rem);
   }
 }
 @media screen and (max-width: 480px) {
@@ -1280,10 +1292,10 @@ a:hover {
 }
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .devide {
-    font-size: 14px;
+    font-size: clamp(0.875rem, 0.542rem + 1.11vw, 1.25rem);
   }
   .devide span {
-    font-size: 24px;
+    font-size: clamp(1.5rem, 1.056rem + 1.48vw, 2rem);
   }
 }
 @media screen and (max-width: 480px) {
@@ -1305,7 +1317,7 @@ a:hover {
     margin-top: 5px;
     margin-right: auto;
     margin-left: auto;
-    font-size: 12px;
+    font-size: clamp(0.75rem, 0.528rem + 0.74vw, 1rem);
     -moz-text-align-last: left;
          text-align-last: left;
   }
@@ -1365,7 +1377,7 @@ a:hover {
 }
 @media screen and (max-width: 480px) {
   .faq__items {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 
@@ -1411,13 +1423,14 @@ a:hover {
   .faq__q {
     max-width: calc(100% - 68px);
     padding: 15px 15px 15px 53px;
+    font-size: 14px;
   }
   .faq__q::before {
     left: 15px;
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
-    line-height: 30px;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -1433,6 +1446,7 @@ a:hover {
 @media screen and (max-width: 480px) {
   .faq__a {
     padding: 13px 19px;
+    font-size: 14px;
   }
 }
 
@@ -1483,11 +1497,12 @@ a:hover {
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   .con {
     padding-top: 60px;
-    padding-bottom: 125px;
+    padding-bottom: 60px;
   }
   .con::before, .con::after {
-    width: 254px;
-    height: 114px;
+    width: clamp(10.063rem, 5.015rem + 16.79vw, 15.75rem);
+    height: clamp(4.125rem, 2.017rem + 7.01vw, 6.5rem);
+    aspect-ratio: 63/26;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1619,12 +1634,8 @@ a:hover {
   .contact-form__label label {
     font-size: 16px;
   }
-  .contact-form__label label.is-required {
-    display: inline-block;
-    position: relative;
-  }
   .contact-form__label label.is-required::after {
-    right: -13px;
+    right: -12px;
     width: 8px;
     font-size: 14px;
   }
@@ -1708,6 +1719,7 @@ a:hover {
   .contact-form__input [type=email],
   .contact-form__input [type=tel] {
     width: 100%;
+    height: 42px;
     margin-top: 10px;
     padding: 10px 10px;
     border: none;
@@ -1756,6 +1768,13 @@ a:hover {
   .contact-age span {
     margin-left: 5px;
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact-age span {
+    display: inline-block;
+    height: 19px;
+    vertical-align: bottom;
   }
 }
 
